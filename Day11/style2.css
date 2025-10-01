@@ -1,0 +1,42 @@
+.container{
+    background-color: rgb(182, 231, 182);
+    width: 40vw;
+    height: 50vh;
+}
+
+.box{
+    /* background-color: rgb(196, 76, 76); */
+    width: 4vw;
+    height: 6vh;
+    text-align: center;
+    /* animation-name: TausifAman;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.83, 0.02, 0.72, 1.08);
+    animation-direction: alternate-reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: TausifAman 3s cubic-bezier(0.95,-0.02, 0.43, 0.91) 2s infinite alternate forwards, Animation 3s cubic-bezier(0.95,-0.02, 0.43, 0.91) 2s infinite alternate forwards;
+}
+
+@keyframes TausifAman{
+    from{
+        background-color: aquamarine;
+    }
+    to{
+        background-color: rgb(47, 106, 86);
+        transform: translateX(300px);
+    }
+}
+
+@keyframes Animation {
+    0%{
+        transform: rotate(90deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: rotate(270deg)
+    }
+}
